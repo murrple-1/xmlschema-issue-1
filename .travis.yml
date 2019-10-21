@@ -1,0 +1,10 @@
+language: python
+python: "3.6"
+cache: pip
+before_install:
+  - pip install -U pip
+  - pip install pipenv
+install:
+  - pipenv sync --dev
+script:
+  - pipenv graph

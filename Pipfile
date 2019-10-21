@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+
+[dev-packages]
+lxml = "==4.4.1"
+xmlschema = "==1.0.15"
+
+[requires]
+python_version = "3.6"
