@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://www.test.com/webservice" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.test.com/webservice">
+	<xsd:annotation>
+		<xsd:documentation>Version: 1.0</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="Proposal" type="ProposalType">
+		<xsd:annotation>
+			<xsd:documentation>Information to import into application</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:simpleType name="ProposalType">
+		<xsd:annotation>
+			<xsd:documentation>Information structure</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:boolean">
+			<xsd:pattern value="true"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
